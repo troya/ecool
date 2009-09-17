@@ -1,0 +1,114 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (110.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateMovies (20090917060558)
+  [4;35;1mSQL (31.0ms)[0m   [0mCREATE TABLE `movies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `rating` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090917060558')[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mdescribe `movies`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSHOW KEYS FROM `movies`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2009-09-17 14:25:16) [GET]
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 594ms (View: 578, DB: 0) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2009-09-17 14:25:20) [GET]
+  [4;35;1mMovie Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/movies/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2009-09-17 14:25:23) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"iPjDbfh6K3wfxcxUlY1S70cE4kEgTnUHXvBTp+oEdhc=", "movie"=>{"rating"=>"3", "title"=>"asdg"}}
+  [4;36;1mMovie Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMovie Create (0.0ms)[0m   [0;1mINSERT INTO `movies` (`rating`, `updated_at`, `title`, `created_at`) VALUES(3, '2009-09-17 06:25:24', 'asdg', '2009-09-17 06:25:24')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/movies/1
+Completed in 187ms (DB: 16) | 302 Found [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2009-09-17 14:25:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMovie Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 1) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/movies/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2009-09-17 14:25:26) [GET]
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/movies]
+/!\ FAILSAFE /!\  Thu Sep 17 00:40:03 -0600 2009
+  Status: 500 Internal Server Error
+  Access denied for user 'root'@'localhost' (using password: YES)
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/fastcgi.rb:56:in `serve'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:103:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:153:in `with_signal_handler'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:101:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:78:in `process_each_request'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:77:in `each'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:77:in `process_each_request'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:76:in `catch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:76:in `process_each_request'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:51:in `process!'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:23:in `process!'
+    dispatch.fcgi:24
+
