@@ -18,9 +18,9 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: ecool_dev
-  pool: 6
-  username: root
+  database: scriptge_ecoolstagedev
+  pool: 8
+  username: scriptge_dev
   password: abc123
   socket: /tmp/mysql.sock
 

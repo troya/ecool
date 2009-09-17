@@ -111,6 +111,7 @@ Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/movies]
     /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:51:in `process!'
     /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/fcgi_handler.rb:23:in `process!'
     dispatch.fcgi:24
+<<<<<<< HEAD:log/development.log
   [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
@@ -272,3 +273,6 @@ Rendering template within layouts/movies
 Rendering movies/index
   [4;35;1mMovie Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
 Completed in 10ms (View: 4, DB: 2) | 200 OK [http://stage.scriptgeek.org/movies]
+=======
+
+>>>>>>> 910d4a7cc5aae8e223b02d4e3d86250f2204a59f:log/development.log
