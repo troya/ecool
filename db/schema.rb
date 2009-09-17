@@ -9,11 +9,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090917060558) do
+ActiveRecord::Schema.define(:version => 20090917084635) do
 
   create_table "movies", :force => true do |t|
     t.string   "title"
     t.integer  "rating"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "resources", :force => true do |t|
+    t.string   "title"
+    t.integer  "rating"
+    t.text     "desc"
+    t.string   "avatar"
+    t.string   "resource_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

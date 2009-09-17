@@ -1,0 +1,28 @@
+<p>
+  <b>Title:</b>
+  <%=h @resource.title %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%=h @resource.rating %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%=h @resource.desc %>
+</p>
+
+<p>
+  <b>Avatar:</b>
+  <%=h @resource.avatar %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @resource.resource_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>
