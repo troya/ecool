@@ -18,10 +18,10 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: scriptge_ecoolstagedev
+  database: ecool_dev
   pool: 5
-  username: scriptge_ecoolsd
-  password: /m.VU!i|!t:b
+  username: root
+  password: abc123
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
