@@ -32,8 +32,11 @@ class User < ActiveRecord::Base
 
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
   def self.authenticate(login, password)
-    u = find :first, :conditions => ['login = ? and activated_at IS NOT NULL', login] # need to get the salt
-    u && u.authenticated?(password) ? u : nil
+    # We send activate mail, but if the user which has not pass activate can also login. We may add a new roll for such users later.
+	# u = find :first, :conditions => ['login = ? and activated_at IS NOT NULL', login] # need to get the salt
+    u = find :first, :conditions => ['login = ?', login] # need to get the salt
+    
+	u && u.authenticated?(password) ? u : nil
   end
 
   # Encrypts some data with the salt.

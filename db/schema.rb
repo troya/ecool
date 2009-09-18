@@ -9,11 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090917101006) do
+ActiveRecord::Schema.define(:version => 20090918045554) do
 
   create_table "movies", :force => true do |t|
     t.string   "title"
     t.integer  "rating"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "my_favorites", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "resource_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
