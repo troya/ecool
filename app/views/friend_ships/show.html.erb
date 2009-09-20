@@ -1,0 +1,18 @@
+<p>
+  <b>User:</b>
+  <%=h @friend_ship.user_id %>
+</p>
+
+<p>
+  <b>Friend:</b>
+  <%=h @friend_ship.friend_id %>
+</p>
+
+<p>
+  <b>Group:</b>
+  <%=h @friend_ship.group %>
+</p>
+
+
+<%= link_to 'Edit', edit_friend_ship_path(@friend_ship) %> |
+<%= link_to 'Back', friend_ships_path %>

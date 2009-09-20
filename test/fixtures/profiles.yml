@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  main_privacy: MyString
+  friends_list_privacy: MyString
+  email_privacy: MyString
+  comments_privacy: MyString
+  address: MyString
+  city: MyString
+  desc: MyText
+
+two:
+  main_privacy: MyString
+  friends_list_privacy: MyString
+  email_privacy: MyString
+  comments_privacy: MyString
+  address: MyString
+  city: MyString
+  desc: MyText

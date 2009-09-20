@@ -1,0 +1,24 @@
+<h1>Listing friend_ships</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Friend</th>
+    <th>Group</th>
+  </tr>
+
+<% @friend_ships.each do |friend_ship| %>
+  <tr>
+    <td><%=h friend_ship.user_id %></td>
+    <td><%=h friend_ship.friend_id %></td>
+    <td><%=h friend_ship.group %></td>
+    <td><%= link_to 'Show', friend_ship %></td>
+    <td><%= link_to 'Edit', edit_friend_ship_path(friend_ship) %></td>
+    <td><%= link_to 'Destroy', friend_ship, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New friend_ship', new_friend_ship_path %>

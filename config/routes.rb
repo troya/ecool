@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :friend_ships
+
+  map.resources :profiles
+
   map.resources :my_favorites
 
   map.resources :users
