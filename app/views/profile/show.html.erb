@@ -1,0 +1,37 @@
+<p>
+  <b>Main privacy:</b>
+  <%=h @profile.main_privacy %>
+</p>
+
+<p>
+  <b>Friends list privacy:</b>
+  <%=h @profile.friends_list_privacy %>
+</p>
+
+<p>
+  <b>Email privacy:</b>
+  <%=h @profile.email_privacy %>
+</p>
+
+<p>
+  <b>Comments privacy:</b>
+  <%=h @profile.comments_privacy %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @profile.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @profile.city %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%=h @profile.desc %>
+</p>
+
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
