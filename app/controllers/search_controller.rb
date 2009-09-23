@@ -5,7 +5,7 @@ class SearchController < ApplicationController
 
 		# Call the remote server and get our result
 		result = server.call("SearchResource.search", "wokao")
-		render :text => result.to_json
+		render :text => result[0]["date"].to_json
 		
 	end
 	
