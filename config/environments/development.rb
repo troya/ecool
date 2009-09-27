@@ -18,3 +18,6 @@ config.action_mailer.raise_delivery_errors = false
 
 SITE_URL  = "localhost:3000"
 ADMIN_EMAIL = "8ger@8gcool.com"
+
+SEARCH_HOST = "localhost"
+
