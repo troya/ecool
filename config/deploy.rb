@@ -59,3 +59,4 @@ namespace :backup do
 
 end
 
+require "capistrano_db"
