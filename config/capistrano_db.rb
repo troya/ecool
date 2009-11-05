@@ -137,6 +137,12 @@ Capistrano::Configuration.instance.load do
       run "mkdir -p #{shared_path}/db" 
       run "mkdir -p #{shared_path}/config" 
       put config.result(binding), "#{shared_path}/config/database.yml"
+	  
+	  env_location = "config/environment.rb"
+	  env_template = File.read(env_location)
+	  env_config = ERB.new(env_template)
+	  put config.result(binding), env_location
+	  
     end
 
     desc <<-DESC

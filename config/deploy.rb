@@ -36,12 +36,12 @@ namespace :deploy do
  end
 task :production do
   set :deploy_to, "/home/scriptge/rails/ecool_release"
- 
+  set :stage_name, "ENV['RAILS_ENV'] = \"production\""
 end
 
 task :staging do
   set :deploy_to, "/home/scriptge/rails/ecool_staging"
-  
+  set :stage_name, "ENV['RAILS_ENV'] = \"staging\""
 end
 
 namespace :backup do
