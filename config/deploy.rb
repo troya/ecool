@@ -1,3 +1,5 @@
+require "config/capistrano_db"
+
 default_run_options[:pty] = true
 set :application, "ecool"
 set :repository,  "git@github.com:troya/ecool.git"
@@ -59,4 +61,4 @@ namespace :backup do
 
 end
 
-require "capistrano_db"
+
