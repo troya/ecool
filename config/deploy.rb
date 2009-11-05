@@ -20,10 +20,39 @@ role :db,  "scriptgeek.org", :primary => true # This is where Rails migrations w
 # if you're still using the script/reapear helper you will need
 # these http://github.com/rails/irs_process_scripts
 
-# namespace :deploy do
-#   task :start {}
-#   task :stop {}
-#   task :restart, :roles => :app, :except => { :no_release => true } do
-#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#   end
-# end
+namespace :deploy do
+   task :start do
+   end
+   task :stop do
+   end
+   task :restart, :roles => :app, :except => { :no_release => true } do
+     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+   end
+ end
+task :production do
+  set :deploy_to, "/home/scriptge/rails/ecool_release"
+ 
+end
+
+task :staging do
+  set :deploy_to, "/home/scriptge/rails/ecool_staging"
+  
+end
+
+namespace :backup do
+
+  task :default do
+    web
+    database
+  end
+
+  task :web, :roles => :web do
+    puts "Backing Up Web Server"
+  end
+
+  task :database, :roles => :db do
+    puts "Backing Up DB Server"
+  end
+
+end
+
