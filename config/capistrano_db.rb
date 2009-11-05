@@ -113,7 +113,7 @@ Capistrano::Configuration.instance.load do
       when running deploy:setup for all stages one by one.
     DESC
     task :setup, :except => { :no_release => true } do
-      set :template_dir, "/home/scriptge/rails/ecool_template"
+
       default_template = <<-EOF
       base: &base
         adapter: sqlite3

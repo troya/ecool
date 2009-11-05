@@ -1,4 +1,4 @@
-require "config/capistrano_db"
+
 
 default_run_options[:pty] = true
 set :application, "ecool"
@@ -60,5 +60,7 @@ namespace :backup do
   end
 
 end
+
+require "config/capistrano_db"
 
 
