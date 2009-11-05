@@ -20,6 +20,9 @@ role :db,  "scriptgeek.org", :primary => true # This is where Rails migrations w
 # if you're still using the script/reapear helper you will need
 # these http://github.com/rails/irs_process_scripts
 
+set :template_dir, "/home/scriptge/rails/ecool_template"
+
+
 namespace :deploy do
    task :start do
    end
