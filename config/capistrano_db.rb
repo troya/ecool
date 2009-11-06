@@ -153,7 +153,7 @@ Capistrano::Configuration.instance.load do
       [internal] Generate environment.rb file to the just deployed release.
     DESC
     task :setup_env, :except => { :no_release => true } do
-      env_location = "#{release_path}/config/environment.rb"
+      env_location = "#{deploy_to}/current/config/environment.rb"
 	  env_template = File.read(env_location)
 	  env_config = ERB.new(env_template)
 	  put config.result(binding), env_location
@@ -163,5 +163,5 @@ Capistrano::Configuration.instance.load do
 
   after "deploy:setup",           "db:setup"   unless fetch(:skip_db_setup, false)
   after "deploy:finalize_update", "db:symlink"
-  after "deploy:symlink", "db:setup_env"
+  
 end
