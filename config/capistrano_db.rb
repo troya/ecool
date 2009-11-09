@@ -113,24 +113,9 @@ Capistrano::Configuration.instance.load do
       when running deploy:setup for all stages one by one.
     DESC
     task :setup, :except => { :no_release => true } do
-
-      default_template = <<-EOF
-      base: &base
-        adapter: sqlite3
-        timeout: 5000
-      development:
-        database: #{shared_path}/db/development.sqlite3
-        <<: *base
-      test:
-        database: #{shared_path}/db/test.sqlite3
-        <<: *base
-      production:
-        database: #{shared_path}/db/production.sqlite3
-        <<: *base
-      EOF
-      
-      location = fetch(:template_dir, "config/deploy") + '/database.yml.erb'
-      template = File.file?(location) ? File.read(location) : default_template
+            
+      location = 'config/deploy/database.yml.erb'
+      template = File.read(location)
       
       config = ERB.new(template)
       
@@ -146,7 +131,9 @@ Capistrano::Configuration.instance.load do
     DESC
     task :symlink, :except => { :no_release => true } do
 	  
-	  run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml" 
+	  run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+	  run "rm -rf #{release_path}/config/environment.rb"
+	  run "ln -nfs #{shared_path}/config/environment.rb #{release_path}/config/environment.rb"	  
     end
 	
 	desc <<-DESC
@@ -155,14 +142,15 @@ Capistrano::Configuration.instance.load do
     task :setup_env, :except => { :no_release => true } do     
 	  env_template = File.read("config/environment.rb")
 	  env_config = ERB.new(env_template)
-	  env_location = "#{deploy_to}/current/config/environment.rb"
-	  put config.result(binding), env_location
+	  env_location = "#{shared_path}/config/environment.rb"
+	  put env_config.result(binding), env_location
+	  
     end
 
   end
 
   after "deploy:setup",           "db:setup"   unless fetch(:skip_db_setup, false)
   after "deploy:finalize_update", "db:symlink"
-  after "deploy:symlink", "db:setup_env"
+  after "db:setup", "db:setup_env"
   
 end
