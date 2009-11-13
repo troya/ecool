@@ -13,11 +13,12 @@ config.action_controller.consider_all_requests_local = true
 config.action_view.debug_rjs                         = true
 config.action_controller.perform_caching             = false
 
+config.log_level = :debug
+
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
 
-SITE_URL  = "localhost:3000"
+SITE_URL  = "www.8gcool.com"
 ADMIN_EMAIL = "8ger@8gcool.com"
 
-SEARCH_HOST = "localhost"
-
+SEARCH_HOST = "8gcool.appspot.com"

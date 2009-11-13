@@ -2,7 +2,10 @@
 
 # Specifies gem version of Rails to use when vendor/rails is not present
 # RAILS_GEM_VERSION = '2.3.3' unless defined? RAILS_GEM_VERSION
-# ENV['RAILS_ENV'] = ��development��
+# ENV['RAILS_ENV'] = "development"
+
+# The following will be replaced in deploy process if necessary
+#{stage_name}
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
