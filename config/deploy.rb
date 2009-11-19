@@ -42,6 +42,7 @@ end
 task :staging do
   set :deploy_to, "/home/scriptge/rails/ecool_staging"
   set :stage_name, "ENV['RAILS_ENV'] = \"staging\""
+  set :web_root, "/home/scriptge/public_html/ecool_stage"
 end
 
 namespace :backup do
