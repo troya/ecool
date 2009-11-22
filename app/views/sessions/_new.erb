@@ -1,0 +1,20 @@
+<p class="user">&nbsp;</p>
+		
+		<% form_tag session_path, :class=>"one" do -%>											
+													<label>username :</label>
+													<label>password :</label>
+		
+		<%= text_field_tag 'login',nil, :class=> "txtfield" %>											
+		<%= password_field_tag 'password',nil, :class=>"txtfield"%>											
+		<%= submit_tag 'Log in',:class=> "logButt" %>									
+		<!-- Uncomment this if you want this functionality
+<p><label for="remember_me">Remember me:</label>
+<%= check_box_tag 'remember_me' %></p>
+-->
+											<% end -%>
+													<p class="register">
+													Maecenas eget orci quis elit malesuada tempor duise into nullam vitae duise fellis figero.
+													<span><a href="#">register today!</a></span>
+											</p>
+
+

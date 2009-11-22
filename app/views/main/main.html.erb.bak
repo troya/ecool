@@ -45,7 +45,7 @@
 								<div id="topBlock">
 								<!--Log in Block -->
 													<div id="userLog">
-													<%= render :partial => "sessions/new" %>
+													<%= render :partial => "login" %>
 													</div>
 									<!--Log in Block -->
 													<div id="fashionBlock">
