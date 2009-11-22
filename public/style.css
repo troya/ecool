@@ -37,6 +37,13 @@ margin:0 auto;
 background:url(images/hdr_pic.jpg) no-repeat 0 0 #B6510D;
 color:inherit;
 }
+
+#common_container{
+width:958px;
+margin:0 auto;
+background:url(images/hdr_common_pic.jpg) no-repeat 0 0 #B6510D;
+color:inherit;
+}
 /*------------------------------------------Top Panel-----------------------------------------*/
 #main{
 width:920px;
@@ -48,6 +55,11 @@ position:relative;
 position:absolute;
 left:23px;
 top:14px;
+}
+.small_logo{
+position:absolute;
+left:-4px;
+top:0px;
 }
 h1{
 font:normal 24px/24px Georgia, "Times New Roman", Times, serif;
