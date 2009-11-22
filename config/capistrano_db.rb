@@ -134,6 +134,8 @@ Capistrano::Configuration.instance.load do
 	  run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
 	  run "rm -rf #{release_path}/config/environment.rb"
 	  run "ln -nfs #{shared_path}/config/environment.rb #{release_path}/config/environment.rb"	  
+	  run "rm -rf #{web_root}"
+	  run "ln -s #{release_path}/public #{web_root}"
     end
 	
 	desc <<-DESC
