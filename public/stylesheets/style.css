@@ -56,6 +56,12 @@ position:absolute;
 left:23px;
 top:14px;
 }
+.smalltaskbar{
+position:absolute;
+left:723px;
+top:12px;
+font-size:12px;
+}
 h1{
 font:normal 24px/24px Georgia, "Times New Roman", Times, serif;
 color:#D3CC64;
