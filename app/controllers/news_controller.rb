@@ -1,7 +1,6 @@
 class NewsController < ApplicationController
   include YahooApiHelper
   def all
-    @result = searchNews("gossip girl")
+    @result = search_news("gossip girl")
   end
-
 end
