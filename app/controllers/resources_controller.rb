@@ -1,4 +1,7 @@
 class ResourcesController < ApplicationController
+
+  include YahooApiHelper
+
   # GET /resources
   # GET /resources.xml
   def index
@@ -14,7 +17,7 @@ class ResourcesController < ApplicationController
   # GET /resources/1.xml
   def show
     @resource = Resource.find(params[:id])
-
+    @resource_news = search_news(@resource.title)["ysearchresponse"]["resultset_news"]
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @resource }

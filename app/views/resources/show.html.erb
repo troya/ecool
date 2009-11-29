@@ -24,5 +24,12 @@
 </p>
 
 
+<% @resource_news.each do |news| %>
+  <h3><%=h news["title"] %></h3> </br>
+  <%=h news["date"] %> </br>
+  <%=h news["abstract"] %> </br>
+
+<% end %>
+
 <%= link_to 'Edit', edit_resource_path(@resource) %> |
 <%= link_to 'Back', resources_path %>
