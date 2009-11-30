@@ -1,7 +1,7 @@
 class ResourcesController < ApplicationController
 
   include YahooApiHelper
-
+  layout "common_category"
   # GET /resources
   # GET /resources.xml
   def index

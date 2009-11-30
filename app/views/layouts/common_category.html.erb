@@ -1,31 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>:: Welcome - 8GCool Fashion Club ::</title>
-<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
-<link href="stylesheets/sunny/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
-
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>8GCOOL Fashion Club</title>
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-<div id="container">
+<div id="common_container">
 						<!--Top Panel -->
-						<div id="main">
+						<div id="main" style="height:156px">
 						<a href="index.html">
-
-						<img src="stylesheets/images/logo_8gcool.gif" alt=" E16 Fashion Club" width="213" height="219" border="0" class="logo" title=" E16 Fashion Club"/>
+						<img src="/stylesheets/images/logo_8g_small.gif" alt="8GCOOL Fashion Club" width="138" height="155" border="0" class="small_logo" title=" 8GCOOL Fashion Club"/>
 						</a>
-						<h1>Fashion is a form of ugliness so intolerable that we have to alter it every six months?
+						<h1 style="left:220px">Fashion is a form of ugliness so intolerable that we have to alter it every six months?
 						<span>- Oscar Wilde </span>
 						</h1>
-						<p class="matTxt">Maecenas eget orci quis elit malesuada tempor duise nullam vitae duise fellis figero lullam hallentroupe
-						morbius corbista sed amet lullam.</p>
+
 
 						<!--navigation -->
-										<ul class="navlink">
+										<ul class="navlink" style="top:115px;left:-5px;width:934px;">
 											<li class="active" title="home">home</li>
 											<li><a href="aboutus.html" title="about us ">about&nbsp;us </a></li>
 											<li><a href="#" title="the fashion blog">the fashion blog</a></li>
@@ -41,10 +35,10 @@
 						</div>
 
 						<div id="logBlock">
-								<div id="topBlock">
+								<div id="topBlock" style="padding-top:24px">
 								<!--Log in Block -->
 													<div id="userLog">
-													<%= render :partial => "sessions/new" %>
+													<%= yield :recommended %>
 													</div>
 									<!--Log in Block -->
 													<div id="fashionBlock">
@@ -64,32 +58,13 @@
 
 							<br class="spacer" />
 						</div>
-						<!--Top Panel -->
+
+
 						<!--body -->
-						<div id="BodyPan">
+                                                 <div id="BodyPan">
 						<!--left panel -->
-							<div id="leftPan">
-							<h2 class="trendy">a trendy outlook</h2>
-							<p class="dashed">&nbsp;</p>
-							<h3>Repudiandae sint et molestiae non fiesta sedamet of the lullam hallentroupe duise normalore</h3>
-							<p class="picture">&nbsp;</p>
-							<p class="labrumTxt">Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga sed amet.
-							Senetore of the fellis sed amet curabiror lullam hallentrouype of the fellis. Aliquam in duiseore bocestore a secote nocto mallenose.
-							</p>
-							<br class="spacer" />
-							<p class="dashed">&nbsp;</p>
-							<h3>Fiesta sedamet of the lullam a tenetore sectoreet quamus at the fashionshop</h3>
-							<p class="picture1">&nbsp;</p>
-							<p class="labrumTxt">Laborum et dolorum fuga sed amet. Senetore of the fellis sed amet curabiror lullam hallentrouype of the fellis.
-							 Aliquam in duiseore bocestore a secote nocto mallenose. Similique sunt in culpa qui officia deserunt mollitia animi,
-							 id est lobor in curabitor is always sedamet duise. A superb collection of the contemporary art.
-							 </p>
-							<div id="dashBlock">
-							<p class="special"><a href="#" title="Special Attractions">Special Attractions</a></p>
-							<p class="comments"><a href="#" title="Read&nbsp;Comments">Read&nbsp;Comments</a></p>
-							</div>
-							</div>
-							
+							<%= yield  %>
+
 						<!--left panel -->
 
 
@@ -120,8 +95,7 @@
 						<br class="spacer" />
 						</div>
 
-						<!--body -->
-
+                                                <!--body end -->
 						<!--footer -->
 						<div id="footer">
 
@@ -137,9 +111,9 @@
 						</ul>
 
 						<br class="spacer" />
-						<p class="copyright">2009 8GCool - All Rights Reserved.
+						<p class="copyright">?Copyright Information Goes Here. All Rights Reserved.
 
-						<span>Maintain by: <a href="http://www.scriptgeek.com" target="_blank" title="Script Geek">Script Geek</a></span>
+						<span>Design by: <a href="http://www.hire-a-designer.com" target="_blank" title="Hire-A-Designer">Hire-A-Designer</a></span>
 
 						</p>
 						</div>
