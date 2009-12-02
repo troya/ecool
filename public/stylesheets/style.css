@@ -58,9 +58,33 @@ top:14px;
 }
 .smalltaskbar{
 position:absolute;
-left:723px;
-top:12px;
+left:659px;
+top:2px;
 font-size:12px;
+background: #555555;
+height:25px;
+padding-left:4px;
+float:right;
+}
+
+.smalltaskbar .inner{
+font-size:12px;
+height:25px;
+}
+.userbox .avatarname {
+display:inline;
+}
+ul.usernav {
+display:inline;
+margin:0;
+}
+
+ul.usernav li {
+background:transparent url(/images/modules/header/userbox/bar_separator.gif) no-repeat scroll 5px 0;
+display:inline;
+list-style-type:none;
+margin:0;
+padding:0 0 0 15px;
 }
 h1{
 font:normal 24px/24px Georgia, "Times New Roman", Times, serif;
