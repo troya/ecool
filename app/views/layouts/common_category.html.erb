@@ -8,117 +8,49 @@
 
 <body>
 <div id="common_container">
-						<!--Top Panel -->
-						<div id="main" style="height:156px">
-						<a href="index.html">
-						<img src="/stylesheets/images/logo_8g_small.gif" alt="8GCOOL Fashion Club" width="138" height="155" border="0" class="small_logo" title=" 8GCOOL Fashion Club"/>
-						</a>
-						<h1 style="left:220px">Fashion is a form of ugliness so intolerable that we have to alter it every six months?
-						<span>- Oscar Wilde </span>
-						</h1>
+  <%= render :partial => "share/top" %>
 
 
-						<!--navigation -->
-										<ul class="navlink" style="top:115px;left:-5px;width:934px;">
-											<li class="active" title="home">home</li>
-											<li><a href="aboutus.html" title="about us ">about&nbsp;us </a></li>
-											<li><a href="#" title="the fashion blog">the fashion blog</a></li>
-											<li><a href="#" title="archieve">archieve</a></li>
-											<li><a href="#" title="latest trends">latest&nbsp;trends</a></li>
-											<li><a href="#" title="news">news</a></li>
-											<li><a href="#" title="videos">videos</a></li>
-											<li><a href="#" title="contact">contact</a></li>
-										</ul>
+  <!--body -->
+   <div id="BodyPan">
+  <!--left panel -->
+  <%= yield  %>
 
-						<!--navigation -->
-						<br class="spacer" />
-						</div>
-
-						<div id="logBlock">
-								<div id="topBlock" style="padding-top:24px">
-								<!--Log in Block -->
-													<div id="userLog">
-													<%= yield :recommended %>
-													</div>
-									<!--Log in Block -->
-													<div id="fashionBlock">
-														<div class="fashion">
-														<h2 class="fashionPot">fashionspot</h2>
-														<p class="fashiontxt"><span>Nam libero tempore</span> cumpose soluta nobis.</p>
-														</div>
-														<div class="teenwindow">
-														<h2 class="fashionPot">teenwindow</h2>
-														<p class="fashiontxt"><span>Senetore</span> of the fellista sedos hallen.</p>
-														</div>
-													</div>
-
-								</div>
-								<div id="BotBlock">
-								</div>
-
-							<br class="spacer" />
-						</div>
+  <!--left panel -->
 
 
-						<!--body -->
-                                                 <div id="BodyPan">
-						<!--left panel -->
-							<%= yield  %>
+  <!--right panel -->
+  <div id="rghtPan">
+    <div class="magazineBlock">
+      <h2 class="fashionMag">fashionmag
+      <span>Book&nbsp;Your&nbsp;Copy&nbsp;Today!</span>
+      </h2>
+    </div>
+    <div class="newsBlock">
+      <p class="news">&nbsp;</p>
 
-						<!--left panel -->
+        <ul class="newsLink">
+          <li><a href="#">Xshop inagurated in La Villa</a></li>
+          <li><a href="#">The Latest Trendz</a></li>
+          <li><a href="#">Fashion Designers in Duisese</a></li>
+          <li><a href="#">Shop 2010</a></li>
+        </ul>
 
+      <p class="dates">&nbsp;</p>
+      <p class="datingTxt">
+        This is some information of the lullam zone corbista hallestroup in the mataching of the duise to the aqulium.
+        <span><a href="#" title="More Dating News on E16">More Dating News on E16</a></span>
+      </p>
+    </div>
+  </div>
+  <!--right panel -->
+  <br class="spacer" />
+  </div>
 
-						<!--right panel -->
-						<div id="rghtPan">
-						<div class="magazineBlock">
-						<h2 class="fashionMag">fashionmag
-						<span>Book&nbsp;Your&nbsp;Copy&nbsp;Today!</span>
-						</h2>
-						</div>
-						<div class="newsBlock">
-						<p class="news">&nbsp;</p>
+  <!--body end -->
 
-							<ul class="newsLink">
-								<li><a href="#">Xshop inagurated in La Villa</a></li>
-								<li><a href="#">The Latest Trendz</a></li>
-								<li><a href="#">Fashion Designers in Duisese</a></li>
-								<li><a href="#">Shop 2010</a></li>
-							</ul>
-
-						<p class="dates">&nbsp;</p>
-						<p class="datingTxt">This is some information of the lullam zone corbista hallestroup in the mataching of the duise to the aqulium.
-						<span><a href="#" title="More Dating News on E16">More Dating News on E16</a></span>
-						</p>
-						</div>
-						</div>
-						<!--right panel -->
-						<br class="spacer" />
-						</div>
-
-                                                <!--body end -->
-						<!--footer -->
-						<div id="footer">
-
-						<ul class="footerlink">
-							<li><a href="index.html" title="home">home</a></li>
-							<li><a href="aboutus.html" title="about&nbsp;us">about&nbsp;us</a></li>
-							<li><a href="#" title="the fashion blog">the&nbsp;fashion&nbsp;blog</a></li>
-							<li><a href="#" title="archieve">archieve</a></li>
-							<li><a href="#" title="latest trends">latest&nbsp;trends</a></li>
-							<li><a href="#" title="news">news</a></li>
-							<li><a href="#" title="videos">videos</a></li>
-							<li><a href="#" title="contact">contact</a></li>
-						</ul>
-
-						<br class="spacer" />
-						<p class="copyright">?Copyright Information Goes Here. All Rights Reserved.
-
-						<span>Design by: <a href="http://www.hire-a-designer.com" target="_blank" title="Hire-A-Designer">Hire-A-Designer</a></span>
-
-						</p>
-						</div>
-						<!--footer -->
-<br class="spacer" />
+  <%= render :partial => "share/footer" %>
+  <br class="spacer" />
 
 
 </div>
