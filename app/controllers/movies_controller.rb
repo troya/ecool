@@ -1,13 +1,12 @@
 class MoviesController < ApplicationController
+  include YahooApiHelper
+  layout "common_category"
+  
   # GET /movies
   # GET /movies.xml
   def index
-    @movies = Movie.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @movies }
-    end
+    @data = movies_this_week().xpath("//rss/channel/item")
+    
   end
 
   # GET /movies/1

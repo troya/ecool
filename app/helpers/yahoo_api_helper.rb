@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'net/http'
 require 'json'
+require 'nokogiri'
 
 module YahooApiHelper
   include FileCacheHelper
@@ -19,9 +20,14 @@ module YahooApiHelper
 
   end
   
+  def movies_this_week()
+	url = "http://rss.ent.yahoo.com/movies/thisweek.xml"
+	return call_rss url
+  end
+  
   def call_yahoo_api(url)
     cachekey = cache_key(url)
-    data = RESULTS_CACHE.fetch("#{cachekey}", :expires_in => 6.hours) do
+    data = RESULTS_CACHE.fetch("#{cachekey}.json", :expires_in => 6.hours) do
       begin
         Net::HTTP.get_response(URI.parse(url)).body
       rescue
@@ -35,5 +41,16 @@ module YahooApiHelper
    end
    return result
   end
+  def call_rss(url)
+    cachekey = cache_key(url)
+    data = RESULTS_CACHE.fetch("#{cachekey}.xml", :expires_in => 6.hours) do
+      begin
+        Net::HTTP.get_response(URI.parse(url)).body
+      rescue
+        "<error>Connection error.</error>"
+      end
+    end
 
+   Nokogiri::XML(data)
+  end
 end
