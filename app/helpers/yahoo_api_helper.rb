@@ -51,6 +51,6 @@ module YahooApiHelper
       end
     end
 
-   Nokogiri::XML(data)
+   Nokogiri::Slop(data)
   end
 end

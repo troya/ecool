@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController
   include YahooApiHelper
-  layout "common_category"
+  #layout "common_category"
   
   # GET /movies
   # GET /movies.xml

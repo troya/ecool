@@ -1,1 +1,3 @@
-<%= simple_format @data.to_yaml %> 
+<% @data.each do |item| %>
+	<%= item.title.content %> 
+<% end %>
