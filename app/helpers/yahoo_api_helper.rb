@@ -21,8 +21,8 @@ module YahooApiHelper
   end
   
   def movies_this_week()
-	url = "http://rss.ent.yahoo.com/movies/thisweek.xml"
-	return call_rss url
+    url = "http://rss.ent.yahoo.com/movies/thisweek.xml"
+    return call_rss url
   end
   
   def call_yahoo_api(url)

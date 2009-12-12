@@ -1,4 +1,4 @@
-"»<?xml version="1.0" encoding="iso-8859-1" ?>
+"æ<?xml version="1.0" encoding="iso-8859-1" ?>
 <?xml-stylesheet href="/yrss.xsl" type="text/xsl" media="screen"?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss">
 <channel>
@@ -7,8 +7,8 @@
 <description>Movies Opening in Theatres This Week</description>
 <language>en-us</language>
 <copyright>Copyright (c) 2009 Yahoo! Inc. All rights reserved.</copyright>
-<pubDate>Fri, 11 Dec 2009 08:12:01 GMT</pubDate>
-<lastBuildDate>Fri, 11 Dec 2009 08:12:01 GMT</lastBuildDate>
+<pubDate>Sat, 12 Dec 2009 08:12:01 GMT</pubDate>
+<lastBuildDate>Sat, 12 Dec 2009 08:12:01 GMT</lastBuildDate>
 <image>
 <height>88</height>
 <url>http://l.yimg.com/a/i/us/plus/b6/props/3d_movies.gif</url>
@@ -16,88 +16,5 @@
 <width>120</width>
 <link>http://movies.yahoo.com</link>
 </image>
-<item>
-<title>Single Man opens December 11th, 2009 (limited); December 25th (wide)</title>
-<link>http://us.rd.yahoo.com/movies/top/opening/asingleman2009/?http://movies.yahoo.com/movie/1810057758/info</link>
-<description>Fashion designer Tom Ford makes his directorial debut with this dramatic outing starring Colin Firth, Julianne Moore, and Matthew Goode. Ford and David Scearce adapted the story from a book by Christopher Isherwood, which tells the tragic tale of a professor's loss of his longtime partner.</description>
-<pubDate>Fri, 11 Dec 2009 08:30:46 GMT</pubDate>
-<guid isPermaLink="false">1810057758</guid>
-<media:thumbnail height="74" url="http://l.yimg.com/eb/ymv/us/img/hv/photo/movie_pix/weinstein_company/a_single_man/asingleman_smallposter2-th.jpg" width="50"/>
-</item>
-<item>
-<title>Misfortunates opens </title>
-<link>http://us.rd.yahoo.com/movies/top/opening/themisfortunates2009/?http://movies.yahoo.com/movie/1810088717/info</link>
-<description></description>
-<pubDate>Fri, 11 Dec 2009 08:30:46 GMT</pubDate>
-<guid isPermaLink="false">1810088717</guid>
-</item>
-<item>
-<title>Rocket Singh - Salesman of the Year opens </title>
-<link>http://us.rd.yahoo.com/movies/top/opening/rocketsinghsalesmanoftheyear2009/?http://movies.yahoo.com/movie/1810128639/info</link>
-<description></description>
-<pubDate>Fri, 11 Dec 2009 08:30:46 GMT</pubDate>
-<guid isPermaLink="false">1810128639</guid>
-</item>
-<item>
-<title>Princess and the Frog opens November 25th, 2009 (limited); December 11 (wide)</title>
-<link>http://us.rd.yahoo.com/movies/top/opening/theprincessandthefrog2009/?http://movies.yahoo.com/movie/1809838280/info</link>
-<description>The classic tale of a princess, a kiss, and a frog gets an update (and a change of scenery) with this film in Disney's grand tradition of animated classics. DREAMGIRLS' Anika Noni Rose provides the voice of a beautiful young woman living in New Orleans who may just have to pucker up to an amphibian. THE PRINCESS AND THE FROG arrives not only with Disney's name attached, but also with THE LITTLE MERMAID directors Ron Clements and John Musker at the helm.</description>
-<pubDate>Fri, 11 Dec 2009 08:30:46 GMT</pubDate>
-<guid isPermaLink="false">1809838280</guid>
-<media:thumbnail height="74" url="http://l.yimg.com/eb/ymv/us/img/hv/photo/movie_pix/walt_disney/the_princess_and_the_frog/theprincessandthefrog_smallposter-th.jpg" width="50"/>
-</item>
-<item>
-<title>Invictus opens December 11th, 2009 (wide)</title>
-<link>http://us.rd.yahoo.com/movies/top/opening/invictus2009/?http://movies.yahoo.com/movie/1810073710/info</link>
-<description></description>
-<pubDate>Fri, 11 Dec 2009 08:30:46 GMT</pubDate>
-<guid isPermaLink="false">1810073710</guid>
-<media:thumbnail height="74" url="http://l.yimg.com/eb/ymv/us/img/hv/photo/movie_pix/warner_brothers/invictus/invictus_smallposter-th.jpg" width="50"/>
-</item>
-<item>
-<title>Kings of the Evening opens </title>
-<link>http://us.rd.yahoo.com/movies/top/opening/kingsoftheevening2009/?http://movies.yahoo.com/movie/1809884069/info</link>
-<description></description>
-<pubDate>Fri, 11 Dec 2009 08:30:46 GMT</pubDate>
-<guid isPermaLink="false">1809884069</guid>
-</item>
-<item>
-<title>Don McKay opens </title>
-<link>http://us.rd.yahoo.com/movies/top/opening/donmckay2009/?http://movies.yahoo.com/movie/1810038187/info</link>
-<description>A trip home proves to be anything but relaxing for Don McKay (Oscar nominee Thomas Haden Church) in this indie thriller. He left town more than two decades ago, but when he learns that his old love (Elisabeth Shue) is dying, he is forced to return. But a reunion isn’t all he finds in the town--his troubled past isn’t dead, and new sins are beginning to surface.</description>
-<pubDate>Fri, 11 Dec 2009 08:30:46 GMT</pubDate>
-<guid isPermaLink="false">1810038187</guid>
-</item>
-<item>
-<title>Slammin' Salmon opens December 11th, 2009 (limited)</title>
-<link>http://us.rd.yahoo.com/movies/top/opening/theslamminsalmon2009/?http://movies.yahoo.com/movie/1809973527/info</link>
-<description>The brains behind Broken Lizard bring audiences this riotous comedy set in a restaurant. When a crazed, beefy boss (Michael Clarke Duncan) proposes a contest, the waiters at a restaurant nearly kill themselves--and each other--so they can win $10,000 and avoid a beating from their employer, who is a former boxer. THE SLAMMIN’ SALMON stars all the Broken Lizard regulars, as well as HOW I MET YOUR MOTHER’s Cobie Smulders and HEROES’ Sendil Ramamurthy.</description>
-<pubDate>Fri, 11 Dec 2009 08:30:46 GMT</pubDate>
-<guid isPermaLink="false">1809973527</guid>
-<media:thumbnail height="74" url="http://l.yimg.com/eb/ymv/us/img/hv/photo/movie_pix/anchor_bay/the_slammin__salmon/theslamminsalmon_smallposter-th.jpg" width="50"/>
-</item>
-<item>
-<title>Lovely Bones opens December 11th, 2009 (limited); January 15th, 2010 (wide)</title>
-<link>http://us.rd.yahoo.com/movies/top/opening/thelovelybones2009/?http://movies.yahoo.com/movie/1809795078/info</link>
-<description>Susie Salmon, a young girl who has been murdered, watches over her family -- and her killer -- from heaven. She must weigh her desire for vengeance against her desire for her family to heal.</description>
-<pubDate>Fri, 11 Dec 2009 08:30:46 GMT</pubDate>
-<guid isPermaLink="false">1809795078</guid>
-<media:thumbnail height="74" url="http://l.yimg.com/eb/ymv/us/img/hv/photo/movie_pix/dreamworks_skg/the_lovely_bones/thelovelybones_smallposter-th.jpg" width="50"/>
-</item>
-<item>
-<title>Tenderness opens December 11th, 2009 (limited)</title>
-<link>http://us.rd.yahoo.com/movies/top/opening/tenderness2009/?http://movies.yahoo.com/movie/1809704887/info</link>
-<description>Russell Crowe stars in this adaptation of a Robert Cormier novel. When a 15-year-old girl pairs up with a young man, she imagines he'll be able to take her away from her difficulties at home. But he turns out to be far more dangerous than anything she could have experienced with her family. Meanwhile, a cop (Crowe, 3:10 TO YUMA) begins to follow them in the hopes of averting a tragedy.</description>
-<pubDate>Fri, 11 Dec 2009 08:30:46 GMT</pubDate>
-<guid isPermaLink="false">1809704887</guid>
-<media:thumbnail height="74" url="http://l.yimg.com/eb/ymv/us/img/hv/photo/movie_pix/lions_gate_films/tenderness/tenderness_smallposter-th.jpg" width="50"/>
-</item>
-<item>
-<title>Vicious Kind opens </title>
-<link>http://us.rd.yahoo.com/movies/top/opening/theviciouskind2009/?http://movies.yahoo.com/movie/1809998562/info</link>
-<description></description>
-<pubDate>Fri, 11 Dec 2009 08:30:46 GMT</pubDate>
-<guid isPermaLink="false">1809998562</guid>
-</item>
 </channel>
 </rss>

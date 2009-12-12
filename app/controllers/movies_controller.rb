@@ -12,7 +12,7 @@ class MoviesController < ApplicationController
   # GET /movies/1
   # GET /movies/1.xml
   def show
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find_by_url_key(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
