@@ -23,6 +23,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.recentfeeds '/recentfeeds', :controller=> "feed", :action=> "recent"
 
+  map.fetchmovies '/fetch/movies', :controller => 'movies', :action => 'fetch'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

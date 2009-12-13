@@ -8,7 +8,9 @@ class MoviesController < ApplicationController
     @data = movies_this_week().xpath("//rss/channel/item")
     
   end
-
+  def fetch
+    @data = imdb_movies_this_week().css('a.title')
+  end
   # GET /movies/1
   # GET /movies/1.xml
   def show

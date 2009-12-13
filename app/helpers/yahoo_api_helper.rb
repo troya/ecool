@@ -25,6 +25,11 @@ module YahooApiHelper
     return call_rss url
   end
   
+  def imdb_movies_this_week()
+    url = "http://www.imdb.com/nowplaying/"
+    return call_html url
+  end
+
   def call_yahoo_api(url)
     cachekey = cache_key(url)
     data = RESULTS_CACHE.fetch("#{cachekey}.json", :expires_in => 6.hours) do
@@ -42,6 +47,18 @@ module YahooApiHelper
    return result
   end
   def call_rss(url)
+    cachekey = cache_key(url)
+    data = RESULTS_CACHE.fetch("#{cachekey}.xml", :expires_in => 6.hours) do
+      begin
+        Net::HTTP.get_response(URI.parse(url)).body
+      rescue
+        "<error>Connection error.</error>"
+      end
+    end
+
+   Nokogiri::Slop(data)
+  end
+  def call_html(url)
     cachekey = cache_key(url)
     data = RESULTS_CACHE.fetch("#{cachekey}.xml", :expires_in => 6.hours) do
       begin
