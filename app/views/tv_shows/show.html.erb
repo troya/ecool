@@ -1,0 +1,28 @@
+<p>
+  <b>Title:</b>
+  <%=h @tv_show.title %>
+</p>
+
+<p>
+  <b>Url key:</b>
+  <%=h @tv_show.url_key %>
+</p>
+
+<p>
+  <b>Rate:</b>
+  <%=h @tv_show.rate %>
+</p>
+
+<p>
+  <b>Imdb key:</b>
+  <%=h @tv_show.imdb_key %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%=h @tv_show.desc %>
+</p>
+
+
+<%= link_to 'Edit', edit_tv_show_path(@tv_show) %> |
+<%= link_to 'Back', tv_shows_path %>

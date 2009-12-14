@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  url_key: MyString
+  rate: 1
+  imdb_key: MyString
+  desc: MyText
+
+two:
+  title: MyString
+  url_key: MyString
+  rate: 1
+  imdb_key: MyString
+  desc: MyText
