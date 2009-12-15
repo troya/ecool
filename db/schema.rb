@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091212114500) do
+ActiveRecord::Schema.define(:version => 20091214052315) do
 
   create_table "friend_ships", :force => true do |t|
     t.integer  "user_id"
@@ -24,10 +24,7 @@ ActiveRecord::Schema.define(:version => 20091212114500) do
     t.integer  "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "url_key"
   end
-
-  add_index "movies", ["url_key"], :name => "index_movies_on_url_key"
 
   create_table "my_favorites", :force => true do |t|
     t.integer  "user_id"
@@ -58,6 +55,16 @@ ActiveRecord::Schema.define(:version => 20091212114500) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "tags"
+  end
+
+  create_table "tv_shows", :force => true do |t|
+    t.string   "title"
+    t.string   "url_key"
+    t.integer  "rate"
+    t.string   "imdb_key"
+    t.text     "desc"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|

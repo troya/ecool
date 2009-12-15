@@ -29,7 +29,12 @@ module YahooApiHelper
     url = "http://www.imdb.com/nowplaying/"
     return call_html url
   end
-
+  
+  def imdb_tv_today()
+    url = "http://www.imdb.com/sections/tv/"
+    return call_html url
+  end
+  
   def call_yahoo_api(url)
     cachekey = cache_key(url)
     data = RESULTS_CACHE.fetch("#{cachekey}.json", :expires_in => 6.hours) do

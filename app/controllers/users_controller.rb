@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  # Be sure to include AuthenticationSystem in Application Controller instead
-  include AuthenticatedSystem
   
   layout "common_form"
   # render new.rhtml

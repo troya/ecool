@@ -1,0 +1,32 @@
+<h1>Editing tv_show</h1>
+
+<% form_for(@tv_show) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :url_key %><br />
+    <%= f.text_field :url_key %>
+  </p>
+  <p>
+    <%= f.label :rate %><br />
+    <%= f.text_field :rate %>
+  </p>
+  <p>
+    <%= f.label :imdb_key %><br />
+    <%= f.text_field :imdb_key %>
+  </p>
+  <p>
+    <%= f.label :desc %><br />
+    <%= f.text_area :desc %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @tv_show %> |
+<%= link_to 'Back', tv_shows_path %>

@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :tv_shows
+
   map.resources :friend_ships
 
   map.resources :profiles
